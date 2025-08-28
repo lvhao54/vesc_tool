@@ -1242,7 +1242,7 @@ void MainWindow::on_actionLaunchMobileTool_triggered()
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QMessageBox::about(this, "VESC Tool", Utility::aboutText());
+    QMessageBox::about(this, "PESC Tool", Utility::aboutText());
 }
 
 void MainWindow::on_actionLibrariesUsed_triggered()
@@ -1397,7 +1397,7 @@ void MainWindow::reloadPages()
     mPagePackage = new PageVescPackage(this);
     mPagePackage->setVesc(mVesc);
     ui->pageWidget->addWidget(mPagePackage);
-    addPageItem(tr("VESC Packages"),  theme + "icons/Package-96.png", "", true);
+    addPageItem(tr("PESC Packages"),  theme + "icons/Package-96.png", "", true);
 
     mPageMotorSettings = new PageMotorSettings(this);
     mPageMotorSettings->setVesc(mVesc);
@@ -1507,7 +1507,7 @@ void MainWindow::reloadPages()
     mPageAppNunchuk = new PageAppNunchuk(this);
     mPageAppNunchuk->setVesc(mVesc);
     ui->pageWidget->addWidget(mPageAppNunchuk);
-    addPageItem(tr("VESC Remote"),  theme + "icons/icons8-fantasy-96.png",
+    addPageItem(tr("PESC Remote"),  theme + "icons/icons8-fantasy-96.png",
                 theme + "icons/appconf.png", false, true);
     mPageNameIdList.insert("app_vescremote", ui->pageList->count() - 1);
 
@@ -1602,7 +1602,7 @@ void MainWindow::reloadPages()
         vt->setText(p->description);
     }
     ui->pageWidget->addWidget(vt);
-    addPageItem(tr("VESC Dev Tools"),  theme + "icons/v_icon-96.png", "", true);
+    addPageItem(tr("PESC Dev Tools"),  theme + "icons/v_icon-96.png", "", true);
 
     mPageTerminal = new PageTerminal(this);
     mPageTerminal->setVesc(mVesc);

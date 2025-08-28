@@ -134,7 +134,7 @@ Item {
         RowLayout {
             Layout.fillWidth: true
             Button {
-                text: qsTr("Hide")
+                text: qsTr("Hide1")
                 Layout.preferredWidth: 120
                 flat: true
                 onClicked: {

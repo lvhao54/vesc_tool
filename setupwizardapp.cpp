@@ -157,8 +157,8 @@ AppConnectionPage::AppConnectionPage(VescInterface *vesc, QWidget *parent)
 {
     mVesc = vesc;
 
-    setTitle(tr("Connect VESC"));
-    setSubTitle(tr("The VESC has to be connected in order to use this "
+    setTitle(tr("Connect PESC"));
+    setSubTitle(tr("The PESC has to be connected in order to use this "
                    "wizard. Please connect using one of the available "
                    "interfaces."));
 
@@ -194,10 +194,10 @@ AppFirmwarePage::AppFirmwarePage(VescInterface *vesc, QWidget *parent)
     mVesc = vesc;
 
     setTitle(tr("Update Firmware"));
-    setSubTitle(tr("You need to update the firmware on the VESC in order "
-                   "to use it with this version of VESC Tool."));
+    setSubTitle(tr("You need to update the firmware on the PESC in order "
+                   "to use it with this version of PESC Tool."));
 
-    mLabel = new QLabel(tr("Your VESC (or one of the VESCs on the CAN-bus) has old firmware, "
+    mLabel = new QLabel(tr("Your PESC (or one of the VESCs on the CAN-bus) has old firmware, "
                            "and needs to be updated. After that, "
                            "the motor configuration has to be done again."));
 

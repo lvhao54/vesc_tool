@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
     // Settings
     QCoreApplication::setOrganizationName("VESC");
     QCoreApplication::setOrganizationDomain("vesc-project.com");
-    QCoreApplication::setApplicationName("VESC Tool");
+    QCoreApplication::setApplicationName("PESC Tool");
     QSettings set;
     bool isDark = set.value("darkMode", true).toBool();
     Utility::setDarkMode(isDark);

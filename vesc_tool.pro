@@ -46,7 +46,7 @@ ios: {
 #CONFIG += build_mobile
 
 # Exclude built-in firmwares
-#CONFIG += exclude_fw
+CONFIG += exclude_fw
 
 ios: {
     CONFIG    += build_mobile
@@ -133,7 +133,7 @@ contains(DEFINES, HAS_GAMEPAD) {
 android: QT += androidextras
 
 ios | macx: {
-    TARGET = "VESC Tool"
+    TARGET = "PESC Tool"
 }else: {
     android:{
         TARGET = "vesc_tool"
