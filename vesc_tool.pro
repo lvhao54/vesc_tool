@@ -136,10 +136,10 @@ ios | macx: {
     TARGET = "PESC Tool"
 }else: {
     android:{
-        TARGET = "vesc_tool"
+        TARGET = "pesc_tool"
     }else:{
 
-        TARGET = vesc_tool_$$VT_VERSION
+        TARGET = pesc_tool_$$VT_VERSION
     }
 }
 
